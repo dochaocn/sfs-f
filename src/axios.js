@@ -9,7 +9,7 @@ axios.interceptors.request.use(req => {
         // TODO 服务器启动时，请求地址
         // req.url = '/sfs' + req.url
         // TODO 本地启动时，请求地址
-        req.baseURL = 'http://www.dochao.top:8888/sfs'
+        req.baseURL = 'http://debian-o:8888/sfs'
         return req
     },
     err => {

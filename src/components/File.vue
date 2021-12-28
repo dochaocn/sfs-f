@@ -22,7 +22,7 @@
           <!-- action="http://localhost:8088/sfs/file/upload"-->
           <el-upload
               class="upload-demo"
-              action="http://www.dochao.top:8888/sfs/file/upload"
+              action="http://debian-o:8888/sfs/file/upload"
               :on-success="handleSuccess">
             <el-button round type="success">上传文件</el-button>
           </el-upload>
@@ -117,7 +117,7 @@ export default {
       }).catch(error => this.$notify({title: '失败', message: error, type: 'error', duration: 0}))
     },
     handleDownload(row) {
-      window.location.href = 'http://www.dochao.top:8888/sfs/file/download?id=' + row.did
+      window.location.href = 'http://debian-o:8888/sfs/file/download?id=' + row.did
       // window.location.href = 'http://localhost:8088/sfs/file/download?id=' + row.did
     },
     handleSuccess() {
